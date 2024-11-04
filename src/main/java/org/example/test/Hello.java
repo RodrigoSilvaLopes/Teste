@@ -37,6 +37,31 @@ public class Hello {
             System.out.println("This is not supposed to happen");
         }
 
+        //Here we are seeing the TERNARY operator
+        String makeOfCar = "Volkswagen";
+        boolean isDomestic = makeOfCar == "Volkswagen" ? false : true;
+
+        if (isDomestic){
+            System.out.println("This car is domestic to our country");
+        }
+
+        String s = (isDomestic) ? "This car is domestic" : "This car is not domestic";
+        System.out.println(s);
+
+        double var1 = 20.00d;
+        double var2 = 80.00d;
+
+        double sume = (var1 + var2) * 100.00d;
+
+        double remainder = sume % 40.00d;
+
+        boolean var3 = (remainder == 0.00d) ? true : false;
+        System.out.println(var3);
+
+        if (!var3){
+            System.out.println("Got some remainder");
+        }
+
     }
 
 }
